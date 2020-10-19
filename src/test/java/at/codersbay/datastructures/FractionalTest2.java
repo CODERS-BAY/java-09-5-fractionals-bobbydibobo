@@ -7,28 +7,28 @@ import static org.assertj.core.api.Assertions.within;
 
 public class FractionalTest2 {
 
-    @Test
+    @Test //check
     public void testFractionalOneHalf() {
         Fractional fractional = new Fractional(1, 2);
 
         assertThat(fractional.asFloat()).isEqualTo(0.5f);
     }
 
-    @Test
+    @Test //check
     public void testFractionalZero() {
         Fractional fractional = new Fractional(0, 2);
 
         assertThat(fractional.asFloat()).isEqualTo(0f);
     }
 
-    @Test
+    @Test //check
     public void testFractionalGreaterThanOne() {
         Fractional fractional = new Fractional(7, 8);
 
         assertThat(fractional.asFloat()).isEqualTo(0.875f);
     }
 
-    @Test
+    @Test //check
     public void testFractionalOneThird() {
         Fractional fractional = new Fractional(1, 3);
 
